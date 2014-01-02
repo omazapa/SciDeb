@@ -4,3 +4,20 @@ asi como la informacion de dependencias y demas.
 NOTA: Madagascar esta siendo compilada y empaquetada sin soporte para ffmpeg ya 
 que este paquete no esta disponible en los repos oficiales.
  
+para crear el paquete de madagascar bajar las fuentes desde el repositorio de subversion
+svn co http://svn.code.sf.net/p/rsf/code/trunk madagascar
+
+como root instalar las dependencias 
+
+apt-get install scons python-numpy libx11-dev libxaw7-dev libxt-dev \
+libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev libtiff5-dev libgd2-xpm-dev \
+libplplot-dev gfortran python-cairo libcairo2-dev libjpeg8-dev libblas-dev \
+liblapack-dev swig libopenmpi-dev openmpi-bin libfftw3-dev libfftw3-mpi-dev \
+nvidia-cuda-toolkit nvidia-cuda-dev libsuitesparse-dev octave liboctave-dev \
+libnetpbm10-dev petsc-dev units python-dev python-scipy libavcodec-dev python-epydoc
+
+para compilar usar el script compile.sh.
+en la carpeta de compilacion se crea un script llamado env.sh,
+copiar ese script a /etc/profile.d/
+
+luego correr debreate
