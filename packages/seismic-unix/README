@@ -1,0 +1,23 @@
+Esta carpeta contiene los scripts para la compilacion y el empaquetado de Seismic Unix,
+asi como la informacion de dependencias y demas.
+
+ 
+Para crear el paquete de Seismic Unix bajar las fuentes desde http://www.cwp.mines.edu/cwpcodes/
+
+crear una carpeta cwp en /opt/cwp y decomprimir el cwp_su_all_43R5.tgz en /opt/cwp y pasar el script compile.sh a /opt/cwp
+como root instalar las dependencias 
+
+apt-get install libmotif-dev libxmu-dev libxi-dev gfortran libxt-dev libx11-dev x11proto-print-dev libxt6 libmotif4 freeglut3-dev
+
+
+para compilar usar el script compile.sh 
+
+Luego crear un script llamado cwp.sh con la siguiente información
+#!/bin/bash
+export CWPROOT=/opt/cwp
+export PATH=$PATH:/opt/cwp/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cwp/lib
+
+copiar ese script a /etc/profile.d/
+
+luego correr debreate y usar el archivo de configuración cwp.dbp

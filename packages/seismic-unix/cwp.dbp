@@ -1,0 +1,635 @@
+[DEBREATE-0.7.7.5]
+<<CTRL>>
+Package: seismic-unix
+Version: 43R5
+Section: scideb
+Maintainer: Omar Andres Zapata Mesa <scideb@c3.itm.edu.co>
+Homepage: http://www.cwp.mines.edu/
+Priority: optional
+Architecture: amd64
+Depends: freeglut3-dev, libmotif4, libxt6, x11proto-print-dev, libx11-dev, libxt-dev, gfortran, libxi-dev, libxmu-dev, libmotif-dev
+Description: Seismic modeling, migration and inversion methods
+ The main focus areas of CWP research are: seismic modeling, migration and inversion methods, as well as in improving the accuracy and efficiency of computational algorithms for seismic data processing, primarily for application to regions of structural complexity.
+
+<</CTRL>>
+<<FILES>>
+1
+/etc/profile.d/cwp.sh -> cwp.sh -> /opt/cwp
+/opt/cwp/lib/X11/app-defaults/FFtlab -> FFtlab -> /opt/cwp/X11/app-defaults
+/opt/cwp/lib/X11/app-defaults/XRects_XAPP_DEF* -> XRects_XAPP_DEF -> /opt/cwp/X11/app-defaults
+/opt/cwp/lib/X11/app-defaults/XMovie_XAPP_DEF* -> XMovie_XAPP_DEF -> /opt/cwp/X11/app-defaults
+/opt/cwp/lib/X11/app-defaults/XGraph_XAPP_DEF* -> XGraph_XAPP_DEF -> /opt/cwp/X11/app-defaults
+/opt/cwp/lib/libwpc.a -> libwpc.a -> /opt/cwp
+/opt/cwp/lib/libXtcwp.a -> libXtcwp.a -> /opt/cwp
+/opt/cwp/lib/libtetra.a -> libtetra.a -> /opt/cwp
+/opt/cwp/lib/libtrielas.a -> libtrielas.a -> /opt/cwp
+/opt/cwp/lib/libwpc1.a -> libwpc1.a -> /opt/cwp
+/opt/cwp/lib/libpar.a -> libpar.a -> /opt/cwp
+/opt/cwp/lib/libcomp.a -> libcomp.a -> /opt/cwp
+/opt/cwp/lib/libcwp.a -> libcwp.a -> /opt/cwp
+/opt/cwp/lib/libxplot.a -> libxplot.a -> /opt/cwp
+/opt/cwp/lib/libcwputils.a -> libcwputils.a -> /opt/cwp
+/opt/cwp/lib/libpsplot.a -> libpsplot.a -> /opt/cwp
+/opt/cwp/lib/libtrack.a -> libtrack.a -> /opt/cwp
+/opt/cwp/lib/libtriang.a -> libtriang.a -> /opt/cwp
+/opt/cwp/lib/libsu.a -> libsu.a -> /opt/cwp
+/opt/cwp/lib/libXmcwp.a -> libXmcwp.a -> /opt/cwp
+/opt/cwp/lib/libreflect.a -> libreflect.a -> /opt/cwp
+/opt/cwp/include/Dct/membitbuff.h -> membitbuff.h -> /opt/cwp/Dct
+/opt/cwp/include/Dct/comp.h -> comp.h -> /opt/cwp/Dct
+/opt/cwp/include/Dct/membuff.h -> membuff.h -> /opt/cwp/Dct
+/opt/cwp/include/Xmcwp/Xmcwp.h -> Xmcwp.h -> /opt/cwp/Xmcwp
+/opt/cwp/include/Xtcwp/AxesP.h -> AxesP.h -> /opt/cwp/Xtcwp
+/opt/cwp/include/Xtcwp/Axes.h -> Axes.h -> /opt/cwp/Xtcwp
+/opt/cwp/include/Xtcwp/Xtcwp.h -> Xtcwp.h -> /opt/cwp/Xtcwp
+/opt/cwp/include/Wpc/wpcbitbuff.h -> wpcbitbuff.h -> /opt/cwp/Wpc
+/opt/cwp/include/Wpc/wpc1bitbuff.h -> wpc1bitbuff.h -> /opt/cwp/Wpc
+/opt/cwp/include/Wpc/wpc1.h -> wpc1.h -> /opt/cwp/Wpc
+/opt/cwp/include/Wpc/wpcbuffer.h -> wpcbuffer.h -> /opt/cwp/Wpc
+/opt/cwp/include/Wpc/wpcconfig.h -> wpcconfig.h -> /opt/cwp/Wpc
+/opt/cwp/include/Wpc/wpc1lib.h -> wpc1lib.h -> /opt/cwp/Wpc
+/opt/cwp/include/Wpc/wpc1config.h -> wpc1config.h -> /opt/cwp/Wpc
+/opt/cwp/include/Wpc/wpclib.h -> wpclib.h -> /opt/cwp/Wpc
+/opt/cwp/include/Wpc/wpc.h -> wpc.h -> /opt/cwp/Wpc
+/opt/cwp/include/Wpc/wpc1buffer.h -> wpc1buffer.h -> /opt/cwp/Wpc
+/opt/cwp/include/MGL/viewer3.h -> viewer3.h -> /opt/cwp/MGL
+/opt/cwp/include/MGL/trackball.h -> trackball.h -> /opt/cwp/MGL
+/opt/cwp/include/Reflect/reflpsvsh.h -> reflpsvsh.h -> /opt/cwp/Reflect
+/opt/cwp/include/Tetra/tetra.h -> tetra.h -> /opt/cwp/Tetra
+/opt/cwp/include/Triangles/tri.h -> tri.h -> /opt/cwp/Triangles
+/opt/cwp/include/Triangles/sloth.h -> sloth.h -> /opt/cwp/Triangles
+/opt/cwp/include/Triangles/triP.h -> triP.h -> /opt/cwp/Triangles
+/opt/cwp/include/Triangles/elastic.h* -> elastic.h -> /opt/cwp/Triangles
+/opt/cwp/include/cwpcmaps.h -> cwpcmaps.h -> /opt/cwp
+/opt/cwp/include/segy.h -> segy.h -> /opt/cwp
+/opt/cwp/include/par.h -> par.h -> /opt/cwp
+/opt/cwp/include/taup.h -> taup.h -> /opt/cwp
+/opt/cwp/include/xplot.h -> xplot.h -> /opt/cwp
+/opt/cwp/include/header.h -> header.h -> /opt/cwp
+/opt/cwp/include/bheader.h -> bheader.h -> /opt/cwp
+/opt/cwp/include/xwindow.h -> xwindow.h -> /opt/cwp
+/opt/cwp/include/tapesegy.h -> tapesegy.h -> /opt/cwp
+/opt/cwp/include/garnish.h -> garnish.h -> /opt/cwp
+/opt/cwp/include/segd.h -> segd.h -> /opt/cwp
+/opt/cwp/include/psplot.h -> psplot.h -> /opt/cwp
+/opt/cwp/include/VND.h -> VND.h -> /opt/cwp
+/opt/cwp/include/cwp.h -> cwp.h -> /opt/cwp
+/opt/cwp/include/su_xdr.h -> su_xdr.h -> /opt/cwp
+/opt/cwp/include/tapehdr.h -> tapehdr.h -> /opt/cwp
+/opt/cwp/include/bhdr.h -> bhdr.h -> /opt/cwp
+/opt/cwp/include/anisotropy.h -> anisotropy.h -> /opt/cwp
+/opt/cwp/include/tapebhdr.h -> tapebhdr.h -> /opt/cwp
+/opt/cwp/include/rke.h -> rke.h -> /opt/cwp
+/opt/cwp/include/su.h -> su.h -> /opt/cwp
+/opt/cwp/include/hdr.h -> hdr.h -> /opt/cwp
+/opt/cwp/include/wt.h -> wt.h -> /opt/cwp
+/opt/cwp/include/picking.h -> picking.h -> /opt/cwp
+/opt/cwp/bin/regrid3* -> regrid3 -> /opt/cwp
+/opt/cwp/bin/unif2aniso* -> unif2aniso -> /opt/cwp
+/opt/cwp/bin/suzerophase* -> suzerophase -> /opt/cwp
+/opt/cwp/bin/suradon* -> suradon -> /opt/cwp
+/opt/cwp/bin/fftlab* -> fftlab -> /opt/cwp
+/opt/cwp/bin/suget* -> suget -> /opt/cwp
+/opt/cwp/bin/bhedtopar* -> bhedtopar -> /opt/cwp
+/opt/cwp/bin/suaddstatics* -> suaddstatics -> /opt/cwp
+/opt/cwp/bin/sudmotx* -> sudmotx -> /opt/cwp
+/opt/cwp/bin/sunmo* -> sunmo -> /opt/cwp
+/opt/cwp/bin/pswigp* -> pswigp -> /opt/cwp
+/opt/cwp/bin/sufwatrim* -> sufwatrim -> /opt/cwp
+/opt/cwp/bin/suwind* -> suwind -> /opt/cwp
+/opt/cwp/bin/downfort* -> downfort -> /opt/cwp
+/opt/cwp/bin/sugausstaper* -> sugausstaper -> /opt/cwp
+/opt/cwp/bin/surecip* -> surecip -> /opt/cwp
+/opt/cwp/bin/sudoc* -> sudoc -> /opt/cwp
+/opt/cwp/bin/suspeck1k2* -> suspeck1k2 -> /opt/cwp
+/opt/cwp/bin/cwell* -> cwell -> /opt/cwp
+/opt/cwp/bin/suintvel* -> suintvel -> /opt/cwp
+/opt/cwp/bin/swapbhed* -> swapbhed -> /opt/cwp
+/opt/cwp/bin/surelanan* -> surelanan -> /opt/cwp
+/opt/cwp/bin/supsgraph* -> supsgraph -> /opt/cwp
+/opt/cwp/bin/sxplot* -> sxplot -> /opt/cwp
+/opt/cwp/bin/sureflpsvsh* -> sureflpsvsh -> /opt/cwp
+/opt/cwp/bin/suquo* -> suquo -> /opt/cwp
+/opt/cwp/bin/sugassmann* -> sugassmann -> /opt/cwp
+/opt/cwp/bin/sugoupillaud* -> sugoupillaud -> /opt/cwp
+/opt/cwp/bin/suinvvxzco* -> suinvvxzco -> /opt/cwp
+/opt/cwp/bin/tableq* -> tableq -> /opt/cwp
+/opt/cwp/bin/segyscan* -> segyscan -> /opt/cwp
+/opt/cwp/bin/suvlength* -> suvlength -> /opt/cwp
+/opt/cwp/bin/xy2z* -> xy2z -> /opt/cwp
+/opt/cwp/bin/sugabor* -> sugabor -> /opt/cwp
+/opt/cwp/bin/sulog* -> sulog -> /opt/cwp
+/opt/cwp/bin/entropy* -> entropy -> /opt/cwp
+/opt/cwp/bin/dctcomp* -> dctcomp -> /opt/cwp
+/opt/cwp/bin/susynlvcw* -> susynlvcw -> /opt/cwp
+/opt/cwp/bin/grm* -> grm -> /opt/cwp
+/opt/cwp/bin/suimp2d* -> suimp2d -> /opt/cwp
+/opt/cwp/bin/suktmig2d* -> suktmig2d -> /opt/cwp
+/opt/cwp/bin/sudmotivz* -> sudmotivz -> /opt/cwp
+/opt/cwp/bin/suvelan_nsel* -> suvelan_nsel -> /opt/cwp
+/opt/cwp/bin/sufind* -> sufind -> /opt/cwp
+/opt/cwp/bin/suxmovie* -> suxmovie -> /opt/cwp
+/opt/cwp/bin/suput* -> suput -> /opt/cwp
+/opt/cwp/bin/sushape* -> sushape -> /opt/cwp
+/opt/cwp/bin/sumiggbzoan* -> sumiggbzoan -> /opt/cwp
+/opt/cwp/bin/suplane* -> suplane -> /opt/cwp
+/opt/cwp/bin/pstopdfcymk* -> pstopdfcymk -> /opt/cwp
+/opt/cwp/bin/suinterp* -> suinterp -> /opt/cwp
+/opt/cwp/bin/elamodel* -> elamodel -> /opt/cwp
+/opt/cwp/bin/sumix* -> sumix -> /opt/cwp
+/opt/cwp/bin/sushw* -> sushw -> /opt/cwp
+/opt/cwp/bin/gendocs* -> gendocs -> /opt/cwp
+/opt/cwp/bin/sutivel* -> sutivel -> /opt/cwp
+/opt/cwp/bin/suxmax* -> suxmax -> /opt/cwp
+/opt/cwp/bin/rmaxdiff* -> rmaxdiff -> /opt/cwp
+/opt/cwp/bin/copyright* -> copyright -> /opt/cwp
+/opt/cwp/bin/segyhdrs* -> segyhdrs -> /opt/cwp
+/opt/cwp/bin/sucepstrum* -> sucepstrum -> /opt/cwp
+/opt/cwp/bin/sutsq* -> sutsq -> /opt/cwp
+/opt/cwp/bin/zap* -> zap -> /opt/cwp
+/opt/cwp/bin/sulfaf* -> sulfaf -> /opt/cwp
+/opt/cwp/bin/sutaupnmo* -> sutaupnmo -> /opt/cwp
+/opt/cwp/bin/sufnzero* -> sufnzero -> /opt/cwp
+/opt/cwp/bin/supgc* -> supgc -> /opt/cwp
+/opt/cwp/bin/sumigps* -> sumigps -> /opt/cwp
+/opt/cwp/bin/usernames* -> usernames -> /opt/cwp
+/opt/cwp/bin/sucdpbin* -> sucdpbin -> /opt/cwp
+/opt/cwp/bin/suaddhead* -> suaddhead -> /opt/cwp
+/opt/cwp/bin/hudson* -> hudson -> /opt/cwp
+/opt/cwp/bin/suphasevel* -> suphasevel -> /opt/cwp
+/opt/cwp/bin/sudatumk2dr* -> sudatumk2dr -> /opt/cwp
+/opt/cwp/bin/vel2stiff* -> vel2stiff -> /opt/cwp
+/opt/cwp/bin/supad* -> supad -> /opt/cwp
+/opt/cwp/bin/tvnmoqc* -> tvnmoqc -> /opt/cwp
+/opt/cwp/bin/ximage* -> ximage -> /opt/cwp
+/opt/cwp/bin/sutaper* -> sutaper -> /opt/cwp
+/opt/cwp/bin/suahw* -> suahw -> /opt/cwp
+/opt/cwp/bin/mkparfile* -> mkparfile -> /opt/cwp
+/opt/cwp/bin/sufctanismod* -> sufctanismod -> /opt/cwp
+/opt/cwp/bin/cwpfind* -> cwpfind -> /opt/cwp
+/opt/cwp/bin/suvelan_uccs* -> suvelan_uccs -> /opt/cwp
+/opt/cwp/bin/sujitter* -> sujitter -> /opt/cwp
+/opt/cwp/bin/hti2stiff* -> hti2stiff -> /opt/cwp
+/opt/cwp/bin/cpftrend* -> cpftrend -> /opt/cwp
+/opt/cwp/bin/sugendocs* -> sugendocs -> /opt/cwp
+/opt/cwp/bin/surange* -> surange -> /opt/cwp
+/opt/cwp/bin/linrort* -> linrort -> /opt/cwp
+/opt/cwp/bin/setbhed* -> setbhed -> /opt/cwp
+/opt/cwp/bin/transp* -> transp -> /opt/cwp
+/opt/cwp/bin/sudmofk* -> sudmofk -> /opt/cwp
+/opt/cwp/bin/sumigpsti* -> sumigpsti -> /opt/cwp
+/opt/cwp/bin/wtuncomp* -> wtuncomp -> /opt/cwp
+/opt/cwp/bin/sulprime* -> sulprime -> /opt/cwp
+/opt/cwp/bin/supack1* -> supack1 -> /opt/cwp
+/opt/cwp/bin/pscontour* -> pscontour -> /opt/cwp
+/opt/cwp/bin/susyncz* -> susyncz -> /opt/cwp
+/opt/cwp/bin/sureduce* -> sureduce -> /opt/cwp
+/opt/cwp/bin/wpc1uncomp2* -> wpc1uncomp2 -> /opt/cwp
+/opt/cwp/bin/merge2v* -> merge2v -> /opt/cwp
+/opt/cwp/bin/sustaticrrs* -> sustaticrrs -> /opt/cwp
+/opt/cwp/bin/sugazmig* -> sugazmig -> /opt/cwp
+/opt/cwp/bin/sukeycount* -> sukeycount -> /opt/cwp
+/opt/cwp/bin/unisam2* -> unisam2 -> /opt/cwp
+/opt/cwp/bin/refRealAziHTI* -> refRealAziHTI -> /opt/cwp
+/opt/cwp/bin/surandspike* -> surandspike -> /opt/cwp
+/opt/cwp/bin/addrvl3d* -> addrvl3d -> /opt/cwp
+/opt/cwp/bin/ftnstrip* -> ftnstrip -> /opt/cwp
+/opt/cwp/bin/sudivcor* -> sudivcor -> /opt/cwp
+/opt/cwp/bin/suwindpoly* -> suwindpoly -> /opt/cwp
+/opt/cwp/bin/merge2* -> merge2 -> /opt/cwp
+/opt/cwp/bin/subfilt* -> subfilt -> /opt/cwp
+/opt/cwp/bin/suslowift* -> suslowift -> /opt/cwp
+/opt/cwp/bin/sumigprefd* -> sumigprefd -> /opt/cwp
+/opt/cwp/bin/sufxdecon* -> sufxdecon -> /opt/cwp
+/opt/cwp/bin/suspecfx* -> suspecfx -> /opt/cwp
+/opt/cwp/bin/sugetgthr* -> sugetgthr -> /opt/cwp
+/opt/cwp/bin/this_year* -> this_year -> /opt/cwp
+/opt/cwp/bin/segyclean* -> segyclean -> /opt/cwp
+/opt/cwp/bin/suztot* -> suztot -> /opt/cwp
+/opt/cwp/bin/suxcontour* -> suxcontour -> /opt/cwp
+/opt/cwp/bin/suedit* -> suedit -> /opt/cwp
+/opt/cwp/bin/pslabel* -> pslabel -> /opt/cwp
+/opt/cwp/bin/suattributes* -> suattributes -> /opt/cwp
+/opt/cwp/bin/suphidecon* -> suphidecon -> /opt/cwp
+/opt/cwp/bin/sualford* -> sualford -> /opt/cwp
+/opt/cwp/bin/subackush* -> subackush -> /opt/cwp
+/opt/cwp/bin/merge4* -> merge4 -> /opt/cwp
+/opt/cwp/bin/sufdmod1* -> sufdmod1 -> /opt/cwp
+/opt/cwp/bin/sukfilter* -> sukfilter -> /opt/cwp
+/opt/cwp/bin/ibm2float* -> ibm2float -> /opt/cwp
+/opt/cwp/bin/sufwmix* -> sufwmix -> /opt/cwp
+/opt/cwp/bin/fcat* -> fcat -> /opt/cwp
+/opt/cwp/bin/suimp3d* -> suimp3d -> /opt/cwp
+/opt/cwp/bin/subset* -> subset -> /opt/cwp
+/opt/cwp/bin/percent* -> percent -> /opt/cwp
+/opt/cwp/bin/cxzcs* -> cxzcs -> /opt/cwp
+/opt/cwp/bin/succfilt* -> succfilt -> /opt/cwp
+/opt/cwp/bin/segywrite* -> segywrite -> /opt/cwp
+/opt/cwp/bin/a2i* -> a2i -> /opt/cwp
+/opt/cwp/bin/sumigtk* -> sumigtk -> /opt/cwp
+/opt/cwp/bin/sudivstack* -> sudivstack -> /opt/cwp
+/opt/cwp/bin/suzero* -> suzero -> /opt/cwp
+/opt/cwp/bin/sustolt* -> sustolt -> /opt/cwp
+/opt/cwp/bin/suphase* -> suphase -> /opt/cwp
+/opt/cwp/bin/suxpicker* -> suxpicker -> /opt/cwp
+/opt/cwp/bin/vtlvz* -> vtlvz -> /opt/cwp
+/opt/cwp/bin/viewer3* -> viewer3 -> /opt/cwp
+/opt/cwp/bin/sutxtaper* -> sutxtaper -> /opt/cwp
+/opt/cwp/bin/recip* -> recip -> /opt/cwp
+/opt/cwp/bin/sumigpspi* -> sumigpspi -> /opt/cwp
+/opt/cwp/bin/suvelan_nccs* -> suvelan_nccs -> /opt/cwp
+/opt/cwp/bin/suwellrf* -> suwellrf -> /opt/cwp
+/opt/cwp/bin/sukdmig2d* -> sukdmig2d -> /opt/cwp
+/opt/cwp/bin/suputgthr* -> suputgthr -> /opt/cwp
+/opt/cwp/bin/surandhw* -> surandhw -> /opt/cwp
+/opt/cwp/bin/sucddecon* -> sucddecon -> /opt/cwp
+/opt/cwp/bin/sucmp* -> sucmp -> /opt/cwp
+/opt/cwp/bin/suflip* -> suflip -> /opt/cwp
+/opt/cwp/bin/tri2uni* -> tri2uni -> /opt/cwp
+/opt/cwp/bin/suaddnoise* -> suaddnoise -> /opt/cwp
+/opt/cwp/bin/suhistogram* -> suhistogram -> /opt/cwp
+/opt/cwp/bin/sunormalize* -> sunormalize -> /opt/cwp
+/opt/cwp/bin/sucwt* -> sucwt -> /opt/cwp
+/opt/cwp/bin/susort* -> susort -> /opt/cwp
+/opt/cwp/bin/suunpack1* -> suunpack1 -> /opt/cwp
+/opt/cwp/bin/xgraph* -> xgraph -> /opt/cwp
+/opt/cwp/bin/elasyn* -> elasyn -> /opt/cwp
+/opt/cwp/bin/suchw* -> suchw -> /opt/cwp
+/opt/cwp/bin/sukdmig3d* -> sukdmig3d -> /opt/cwp
+/opt/cwp/bin/sumixgathers* -> sumixgathers -> /opt/cwp
+/opt/cwp/bin/supsmovie* -> supsmovie -> /opt/cwp
+/opt/cwp/bin/suilog* -> suilog -> /opt/cwp
+/opt/cwp/bin/trimodel* -> trimodel -> /opt/cwp
+/opt/cwp/bin/velpertan* -> velpertan -> /opt/cwp
+/opt/cwp/bin/sys_arch* -> sys_arch -> /opt/cwp
+/opt/cwp/bin/psmerge* -> psmerge -> /opt/cwp
+/opt/cwp/bin/dzdv* -> dzdv -> /opt/cwp
+/opt/cwp/bin/suacorfrac* -> suacorfrac -> /opt/cwp
+/opt/cwp/bin/suunpack2* -> suunpack2 -> /opt/cwp
+/opt/cwp/bin/suoldtonew* -> suoldtonew -> /opt/cwp
+/opt/cwp/bin/sutihaledmo* -> sutihaledmo -> /opt/cwp
+/opt/cwp/bin/suname* -> suname -> /opt/cwp
+/opt/cwp/bin/sugoupillaudpo* -> sugoupillaudpo -> /opt/cwp
+/opt/cwp/bin/cellauto* -> cellauto -> /opt/cwp
+/opt/cwp/bin/time_now* -> time_now -> /opt/cwp
+/opt/cwp/bin/psbbox* -> psbbox -> /opt/cwp
+/opt/cwp/bin/sudmovz* -> sudmovz -> /opt/cwp
+/opt/cwp/bin/pause* -> pause -> /opt/cwp
+/opt/cwp/bin/uni2tri* -> uni2tri -> /opt/cwp
+/opt/cwp/bin/transp3d* -> transp3d -> /opt/cwp
+/opt/cwp/bin/sudipdivcor* -> sudipdivcor -> /opt/cwp
+/opt/cwp/bin/scmap* -> scmap -> /opt/cwp
+/opt/cwp/bin/suhtmath* -> suhtmath -> /opt/cwp
+/opt/cwp/bin/sudgwaveform* -> sudgwaveform -> /opt/cwp
+/opt/cwp/bin/sumigffd* -> sumigffd -> /opt/cwp
+/opt/cwp/bin/rcslocks* -> rcslocks -> /opt/cwp
+/opt/cwp/bin/dctuncomp* -> dctuncomp -> /opt/cwp
+/opt/cwp/bin/supofilt* -> supofilt -> /opt/cwp
+/opt/cwp/bin/tetramod* -> tetramod -> /opt/cwp
+/opt/cwp/bin/suop* -> suop -> /opt/cwp
+/opt/cwp/bin/suvcat* -> suvcat -> /opt/cwp
+/opt/cwp/bin/cshotplot* -> cshotplot -> /opt/cwp
+/opt/cwp/bin/supolar* -> supolar -> /opt/cwp
+/opt/cwp/bin/rossler* -> rossler -> /opt/cwp
+/opt/cwp/bin/xwigb* -> xwigb -> /opt/cwp
+/opt/cwp/bin/replace* -> replace -> /opt/cwp
+/opt/cwp/bin/cxzco* -> cxzco -> /opt/cwp
+/opt/cwp/bin/refRealVTI* -> refRealVTI -> /opt/cwp
+/opt/cwp/bin/wptuncomp* -> wptuncomp -> /opt/cwp
+/opt/cwp/bin/trip* -> trip -> /opt/cwp
+/opt/cwp/bin/sufind2* -> sufind2 -> /opt/cwp
+/opt/cwp/bin/sultt* -> sultt -> /opt/cwp
+/opt/cwp/bin/sueipofi* -> sueipofi -> /opt/cwp
+/opt/cwp/bin/suband* -> suband -> /opt/cwp
+/opt/cwp/bin/supack2* -> supack2 -> /opt/cwp
+/opt/cwp/bin/suminphase* -> suminphase -> /opt/cwp
+/opt/cwp/bin/suea2df* -> suea2df -> /opt/cwp
+/opt/cwp/bin/psmanager* -> psmanager -> /opt/cwp
+/opt/cwp/bin/supsimage* -> supsimage -> /opt/cwp
+/opt/cwp/bin/elatriuni* -> elatriuni -> /opt/cwp
+/opt/cwp/bin/supws* -> supws -> /opt/cwp
+/opt/cwp/bin/sugprfb* -> sugprfb -> /opt/cwp
+/opt/cwp/bin/sunhmospike* -> sunhmospike -> /opt/cwp
+/opt/cwp/bin/sugain* -> sugain -> /opt/cwp
+/opt/cwp/bin/suramp* -> suramp -> /opt/cwp
+/opt/cwp/bin/sufrac* -> sufrac -> /opt/cwp
+/opt/cwp/bin/sumax* -> sumax -> /opt/cwp
+/opt/cwp/bin/suswapbytes* -> suswapbytes -> /opt/cwp
+/opt/cwp/bin/suptsum* -> suptsum -> /opt/cwp
+/opt/cwp/bin/trisoplot* -> trisoplot -> /opt/cwp
+/opt/cwp/bin/kaperture* -> kaperture -> /opt/cwp
+/opt/cwp/bin/suxcor* -> suxcor -> /opt/cwp
+/opt/cwp/bin/cshot1* -> cshot1 -> /opt/cwp
+/opt/cwp/bin/susplit* -> susplit -> /opt/cwp
+/opt/cwp/bin/xrects* -> xrects -> /opt/cwp
+/opt/cwp/bin/i2a* -> i2a -> /opt/cwp
+/opt/cwp/bin/suresamp* -> suresamp -> /opt/cwp
+/opt/cwp/bin/suvibro* -> suvibro -> /opt/cwp
+/opt/cwp/bin/suxgraph* -> suxgraph -> /opt/cwp
+/opt/cwp/bin/surandstat* -> surandstat -> /opt/cwp
+/opt/cwp/bin/thom2stiff* -> thom2stiff -> /opt/cwp
+/opt/cwp/bin/susehw* -> susehw -> /opt/cwp
+/opt/cwp/bin/xcontour* -> xcontour -> /opt/cwp
+/opt/cwp/bin/sutvband* -> sutvband -> /opt/cwp
+/opt/cwp/bin/suicepstrum* -> suicepstrum -> /opt/cwp
+/opt/cwp/bin/varlist* -> varlist -> /opt/cwp
+/opt/cwp/bin/swapbytes* -> swapbytes -> /opt/cwp
+/opt/cwp/bin/smooth2* -> smooth2 -> /opt/cwp
+/opt/cwp/bin/surefcon* -> surefcon -> /opt/cwp
+/opt/cwp/bin/isatty* -> isatty -> /opt/cwp
+/opt/cwp/bin/lookpar* -> lookpar -> /opt/cwp
+/opt/cwp/bin/susum* -> susum -> /opt/cwp
+/opt/cwp/bin/precedence* -> precedence -> /opt/cwp
+/opt/cwp/bin/newcase* -> newcase -> /opt/cwp
+/opt/cwp/bin/triseis* -> triseis -> /opt/cwp
+/opt/cwp/bin/smooth3d* -> smooth3d -> /opt/cwp
+/opt/cwp/bin/suop2* -> suop2 -> /opt/cwp
+/opt/cwp/bin/sumigsplit* -> sumigsplit -> /opt/cwp
+/opt/cwp/bin/sumigpreffd* -> sumigpreffd -> /opt/cwp
+/opt/cwp/bin/why* -> why -> /opt/cwp
+/opt/cwp/bin/recast* -> recast -> /opt/cwp
+/opt/cwp/bin/overwrite* -> overwrite -> /opt/cwp
+/opt/cwp/bin/suanalytic* -> suanalytic -> /opt/cwp
+/opt/cwp/bin/xmovie* -> xmovie -> /opt/cwp
+/opt/cwp/bin/wpcuncompress* -> wpcuncompress -> /opt/cwp
+/opt/cwp/bin/suconv* -> suconv -> /opt/cwp
+/opt/cwp/bin/supswigb* -> supswigb -> /opt/cwp
+/opt/cwp/bin/vzest* -> vzest -> /opt/cwp
+/opt/cwp/bin/suximage* -> suximage -> /opt/cwp
+/opt/cwp/bin/suremel2dan* -> suremel2dan -> /opt/cwp
+/opt/cwp/bin/sukeyword* -> sukeyword -> /opt/cwp
+/opt/cwp/bin/h2b* -> h2b -> /opt/cwp
+/opt/cwp/bin/supscubecontour* -> supscubecontour -> /opt/cwp
+/opt/cwp/bin/maxdiff* -> maxdiff -> /opt/cwp
+/opt/cwp/bin/suslowft* -> suslowft -> /opt/cwp
+/opt/cwp/bin/sutetraray* -> sutetraray -> /opt/cwp
+/opt/cwp/bin/sukfrac* -> sukfrac -> /opt/cwp
+/opt/cwp/bin/psimage* -> psimage -> /opt/cwp
+/opt/cwp/bin/sufbpickw* -> sufbpickw -> /opt/cwp
+/opt/cwp/bin/sudiff* -> sudiff -> /opt/cwp
+/opt/cwp/bin/cpall* -> cpall -> /opt/cwp
+/opt/cwp/bin/suttoz* -> suttoz -> /opt/cwp
+/opt/cwp/bin/sufft* -> sufft -> /opt/cwp
+/opt/cwp/bin/pscube* -> pscube -> /opt/cwp
+/opt/cwp/bin/suweight* -> suweight -> /opt/cwp
+/opt/cwp/bin/cz1in* -> cz1in -> /opt/cwp
+/opt/cwp/bin/wptcomp* -> wptcomp -> /opt/cwp
+/opt/cwp/bin/updatedoc* -> updatedoc -> /opt/cwp
+/opt/cwp/bin/suharlan* -> suharlan -> /opt/cwp
+/opt/cwp/bin/suxwigb* -> suxwigb -> /opt/cwp
+/opt/cwp/bin/unif2ti2* -> unif2ti2 -> /opt/cwp
+/opt/cwp/bin/psepsi* -> psepsi -> /opt/cwp
+/opt/cwp/bin/sunmo_a* -> sunmo_a -> /opt/cwp
+/opt/cwp/bin/susorty* -> susorty -> /opt/cwp
+/opt/cwp/bin/suspecfk* -> suspecfk -> /opt/cwp
+/opt/cwp/bin/suchart* -> suchart -> /opt/cwp
+/opt/cwp/bin/supscube* -> supscube -> /opt/cwp
+/opt/cwp/bin/b2a* -> b2a -> /opt/cwp
+/opt/cwp/bin/makevel* -> makevel -> /opt/cwp
+/opt/cwp/bin/filetype* -> filetype -> /opt/cwp
+/opt/cwp/bin/dt1tosu* -> dt1tosu -> /opt/cwp
+/opt/cwp/bin/updatedocall* -> updatedocall -> /opt/cwp
+/opt/cwp/bin/sumigprepspi* -> sumigprepspi -> /opt/cwp
+/opt/cwp/bin/sucountkey* -> sucountkey -> /opt/cwp
+/opt/cwp/bin/AzimVelAn* -> AzimVelAn -> /opt/cwp
+/opt/cwp/bin/striptotxt* -> striptotxt -> /opt/cwp
+/opt/cwp/bin/gbbeam* -> gbbeam -> /opt/cwp
+/opt/cwp/bin/subackus* -> subackus -> /opt/cwp
+/opt/cwp/bin/sukdmdcr* -> sukdmdcr -> /opt/cwp
+/opt/cwp/bin/susynlv* -> susynlv -> /opt/cwp
+/opt/cwp/bin/CWPGrep* -> CWPGrep -> /opt/cwp
+/opt/cwp/bin/float2ibm* -> float2ibm -> /opt/cwp
+/opt/cwp/bin/suabshw* -> suabshw -> /opt/cwp
+/opt/cwp/bin/sunull* -> sunull -> /opt/cwp
+/opt/cwp/bin/sudmofkcw* -> sudmofkcw -> /opt/cwp
+/opt/cwp/bin/xpicker* -> xpicker -> /opt/cwp
+/opt/cwp/bin/suinvzco3d* -> suinvzco3d -> /opt/cwp
+/opt/cwp/bin/psgraph* -> psgraph -> /opt/cwp
+/opt/cwp/bin/sutrcount* -> sutrcount -> /opt/cwp
+/opt/cwp/bin/smoothint2* -> smoothint2 -> /opt/cwp
+/opt/cwp/bin/sulcthw* -> sulcthw -> /opt/cwp
+/opt/cwp/bin/sumath* -> sumath -> /opt/cwp
+/opt/cwp/bin/sumigtopo2d* -> sumigtopo2d -> /opt/cwp
+/opt/cwp/bin/susynlvfti* -> susynlvfti -> /opt/cwp
+/opt/cwp/bin/suwfft* -> suwfft -> /opt/cwp
+/opt/cwp/bin/suclogfft* -> suclogfft -> /opt/cwp
+/opt/cwp/bin/suptquo* -> suptquo -> /opt/cwp
+/opt/cwp/bin/sustatic* -> sustatic -> /opt/cwp
+/opt/cwp/bin/suutm* -> suutm -> /opt/cwp
+/opt/cwp/bin/z2xyz* -> z2xyz -> /opt/cwp
+/opt/cwp/bin/spsplot* -> spsplot -> /opt/cwp
+/opt/cwp/bin/wkbj* -> wkbj -> /opt/cwp
+/opt/cwp/bin/suocext* -> suocext -> /opt/cwp
+/opt/cwp/bin/weekday* -> weekday -> /opt/cwp
+/opt/cwp/bin/sucommand* -> sucommand -> /opt/cwp
+/opt/cwp/bin/suhelp* -> suhelp -> /opt/cwp
+/opt/cwp/bin/unglitch* -> unglitch -> /opt/cwp
+/opt/cwp/bin/surelan* -> surelan -> /opt/cwp
+/opt/cwp/bin/sukdmdcs* -> sukdmdcs -> /opt/cwp
+/opt/cwp/bin/suprod* -> suprod -> /opt/cwp
+/opt/cwp/bin/sumute* -> sumute -> /opt/cwp
+/opt/cwp/bin/supef* -> supef -> /opt/cwp
+/opt/cwp/bin/sudatumfd* -> sudatumfd -> /opt/cwp
+/opt/cwp/bin/sumedian* -> sumedian -> /opt/cwp
+/opt/cwp/bin/suspike* -> suspike -> /opt/cwp
+/opt/cwp/bin/suhilb* -> suhilb -> /opt/cwp
+/opt/cwp/bin/suenv* -> suenv -> /opt/cwp
+/opt/cwp/bin/resamp* -> resamp -> /opt/cwp
+/opt/cwp/bin/suifft* -> suifft -> /opt/cwp
+/opt/cwp/bin/sukdsyn2d* -> sukdsyn2d -> /opt/cwp
+/opt/cwp/bin/rayt2d* -> rayt2d -> /opt/cwp
+/opt/cwp/bin/sufdmod2* -> sufdmod2 -> /opt/cwp
+/opt/cwp/bin/a2b* -> a2b -> /opt/cwp
+/opt/cwp/bin/vplusz* -> vplusz -> /opt/cwp
+/opt/cwp/bin/supscontour* -> supscontour -> /opt/cwp
+/opt/cwp/bin/elaps* -> elaps -> /opt/cwp
+/opt/cwp/bin/cz1* -> cz1 -> /opt/cwp
+/opt/cwp/bin/susynvxz* -> susynvxz -> /opt/cwp
+/opt/cwp/bin/suremac2d* -> suremac2d -> /opt/cwp
+/opt/cwp/bin/elacheck* -> elacheck -> /opt/cwp
+/opt/cwp/bin/triray* -> triray -> /opt/cwp
+/opt/cwp/bin/suinterpfowler* -> suinterpfowler -> /opt/cwp
+/opt/cwp/bin/cshot2* -> cshot2 -> /opt/cwp
+/opt/cwp/bin/suvelan_usel* -> suvelan_usel -> /opt/cwp
+/opt/cwp/bin/suxedit* -> suxedit -> /opt/cwp
+/opt/cwp/bin/suimpedance* -> suimpedance -> /opt/cwp
+/opt/cwp/bin/las2su* -> las2su -> /opt/cwp
+/opt/cwp/bin/wpc1comp2* -> wpc1comp2 -> /opt/cwp
+/opt/cwp/bin/sucentsamp* -> sucentsamp -> /opt/cwp
+/opt/cwp/bin/elaray* -> elaray -> /opt/cwp
+/opt/cwp/bin/segyread* -> segyread -> /opt/cwp
+/opt/cwp/bin/succwt* -> succwt -> /opt/cwp
+/opt/cwp/bin/suazimuth* -> suazimuth -> /opt/cwp
+/opt/cwp/bin/sutaup* -> sutaup -> /opt/cwp
+/opt/cwp/bin/suptdiff* -> suptdiff -> /opt/cwp
+/opt/cwp/bin/velpert* -> velpert -> /opt/cwp
+/opt/cwp/bin/susmgauss2* -> susmgauss2 -> /opt/cwp
+/opt/cwp/bin/rayt2dan* -> rayt2dan -> /opt/cwp
+/opt/cwp/bin/sudumptrace* -> sudumptrace -> /opt/cwp
+/opt/cwp/bin/lorenz* -> lorenz -> /opt/cwp
+/opt/cwp/bin/sulhead* -> sulhead -> /opt/cwp
+/opt/cwp/bin/dirtree* -> dirtree -> /opt/cwp
+/opt/cwp/bin/randvel3d* -> randvel3d -> /opt/cwp
+/opt/cwp/bin/farith* -> farith -> /opt/cwp
+/opt/cwp/bin/sumean* -> sumean -> /opt/cwp
+/opt/cwp/bin/sustack* -> sustack -> /opt/cwp
+/opt/cwp/bin/t* -> t -> /opt/cwp
+/opt/cwp/bin/prplot* -> prplot -> /opt/cwp
+/opt/cwp/bin/velconv* -> velconv -> /opt/cwp
+/opt/cwp/bin/sustrip* -> sustrip -> /opt/cwp
+/opt/cwp/bin/supaste* -> supaste -> /opt/cwp
+/opt/cwp/bin/wpccompress* -> wpccompress -> /opt/cwp
+/opt/cwp/bin/sugethw* -> sugethw -> /opt/cwp
+/opt/cwp/bin/thom2hti* -> thom2hti -> /opt/cwp
+/opt/cwp/bin/maxints* -> maxints -> /opt/cwp
+/opt/cwp/bin/verhulst* -> verhulst -> /opt/cwp
+/opt/cwp/bin/sumigpresp* -> sumigpresp -> /opt/cwp
+/opt/cwp/bin/sucliphead* -> sucliphead -> /opt/cwp
+/opt/cwp/bin/suresstat* -> suresstat -> /opt/cwp
+/opt/cwp/bin/wtcomp* -> wtcomp -> /opt/cwp
+/opt/cwp/bin/suamp* -> suamp -> /opt/cwp
+/opt/cwp/bin/susynvxzcs* -> susynvxzcs -> /opt/cwp
+/opt/cwp/bin/suascii* -> suascii -> /opt/cwp
+/opt/cwp/bin/suk1k2filter* -> suk1k2filter -> /opt/cwp
+/opt/cwp/bin/supsmax* -> supsmax -> /opt/cwp
+/opt/cwp/bin/suacor* -> suacor -> /opt/cwp
+/opt/cwp/bin/suhrot* -> suhrot -> /opt/cwp
+/opt/cwp/bin/unisam* -> unisam -> /opt/cwp
+/opt/cwp/bin/supickamp* -> supickamp -> /opt/cwp
+/opt/cwp/bin/sustkvel* -> sustkvel -> /opt/cwp
+/opt/cwp/bin/argv* -> argv -> /opt/cwp
+/opt/cwp/bin/suptprod* -> suptprod -> /opt/cwp
+/opt/cwp/bin/suvelan* -> suvelan -> /opt/cwp
+/opt/cwp/bin/suvel2df* -> suvel2df -> /opt/cwp
+/opt/cwp/bin/triview* -> triview -> /opt/cwp
+/opt/cwp/bin/suwaveform* -> suwaveform -> /opt/cwp
+/opt/cwp/bin/triso* -> triso -> /opt/cwp
+/opt/cwp/bin/pdfhistogram* -> pdfhistogram -> /opt/cwp
+/opt/cwp/bin/sumiggbzo* -> sumiggbzo -> /opt/cwp
+/opt/cwp/bin/unif2* -> unif2 -> /opt/cwp
+/opt/cwp/bin/ftnunstrip* -> ftnunstrip -> /opt/cwp
+/opt/cwp/bin/su3dchart* -> su3dchart -> /opt/cwp
+/opt/cwp/bin/segyhdrmod* -> segyhdrmod -> /opt/cwp
+/opt/cwp/bin/suiclogfft* -> suiclogfft -> /opt/cwp
+/opt/cwp/bin/mrafxzwt* -> mrafxzwt -> /opt/cwp
+/opt/cwp/bin/sukill* -> sukill -> /opt/cwp
+/opt/cwp/bin/rcpall* -> rcpall -> /opt/cwp
+/opt/cwp/bin/sutifowler* -> sutifowler -> /opt/cwp
+/opt/cwp/bin/upfort* -> upfort -> /opt/cwp
+/opt/cwp/bin/sumigfd* -> sumigfd -> /opt/cwp
+/opt/cwp/bin/sucvs4fowler* -> sucvs4fowler -> /opt/cwp
+/opt/cwp/bin/sunan* -> sunan -> /opt/cwp
+/opt/cwp/bin/sudipfilt* -> sudipfilt -> /opt/cwp
+/opt/cwp/bin/pscubecontour* -> pscubecontour -> /opt/cwp
+/opt/cwp/bin/todays_date* -> todays_date -> /opt/cwp
+/opt/cwp/bin/lprop* -> lprop -> /opt/cwp
+/opt/cwp/bin/psmovie* -> psmovie -> /opt/cwp
+/opt/cwp/bin/succepstrum* -> succepstrum -> /opt/cwp
+/opt/cwp/bin/normray* -> normray -> /opt/cwp
+/opt/cwp/bin/suagc* -> suagc -> /opt/cwp
+/opt/cwp/bin/sudatumk2ds* -> sudatumk2ds -> /opt/cwp
+/opt/cwp/bin/sustaticB* -> sustaticB -> /opt/cwp
+/opt/cwp/bin/utmconv* -> utmconv -> /opt/cwp
+/opt/cwp/bin/suquantile* -> suquantile -> /opt/cwp
+/opt/cwp/bin/sushift* -> sushift -> /opt/cwp
+/opt/cwp/bin/supermute* -> supermute -> /opt/cwp
+/opt/cwp/bin/sufdmod2_pml* -> sufdmod2_pml -> /opt/cwp
+/opt/cwp/bin/suaddevent* -> suaddevent -> /opt/cwp
+/opt/cwp/bin/ctrlstrip* -> ctrlstrip -> /opt/cwp
+/opt/cwp/bin/pswigb* -> pswigb -> /opt/cwp
+/opt/cwp/bin/supswigp* -> supswigp -> /opt/cwp
+/opt/cwp/bin/raydata* -> raydata -> /opt/cwp
+/opt/cwp/bin/stiff2vel* -> stiff2vel -> /opt/cwp
+/opt/cwp/bin/updatehead* -> updatehead -> /opt/cwp
+/opt/cwp/bin/sufilter* -> sufilter -> /opt/cwp
+/opt/cwp/bin/lcmap* -> lcmap -> /opt/cwp
+<</FILES>>
+<<SCRIPTS>>
+<<PREINST>>
+0
+<</PREINST>>
+<<POSTINST>>
+0
+<</POSTINST>>
+<<PRERM>>
+0
+<</PRERM>>
+<<POSTRM>>
+0
+<</POSTRM>>
+<</SCRIPTS>>
+<<CHANGELOG>>
+<<DEST>>DEFAULT<</DEST>>
+
+<</CHANGELOG>>
+<<COPYRIGHT>>
+This file is property of the Colorado School of Mines.
+
+Copyright @ 2008, Colorado School of Mines,
+All rights reserved.
+
+
+Redistribution and use in source and binary forms, with or 
+without modification, are permitted provided that the following 
+conditions are met:
+
+    *  Redistributions of source code must retain the above copyright 
+       notice, this list of conditions and the following disclaimer.
+    *  Redistributions in binary form must reproduce the above 
+       copyright notice, this list of conditions and the following 
+       disclaimer in the documentation and/or other materials provided 
+       with the distribution.
+    *  Neither the name of the Colorado School of Mines nor the names of
+       its contributors may be used to endorse or promote products 
+       derived from this software without specific prior written permission.
+
+Warranty Disclaimer:
+THIS SOFTWARE IS PROVIDED BY THE COLORADO SCHOOL OF MINES AND CONTRIBUTORS 
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT 
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS 
+FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE 
+COLORADO SCHOOL OF MINES OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER 
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, 
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+POSSIBILITY OF SUCH DAMAGE.
+
+
+Export Restriction Disclaimer:
+We believe that CWP/SU: Seismic Un*x is a low technology product that does
+not appear on the Department of Commerce CCL list of restricted exports.
+Accordingly, we believe that our product meets the qualifications of
+an ECCN (export control classification number) of EAR99 and we believe
+it fits the qualifications of NRR (no restrictions required), and
+is thus not subject to export restrictions of any variety.
+
+Approved Reference Format:
+In publications, please refer to SU as per the following example:
+Cohen, J. K. and Stockwell, Jr. J. W., (200_), CWP/SU: Seismic Un*x 
+Release No. __: an open source software  package for seismic 
+research and processing, 
+Center for Wave Phenomena, Colorado School of Mines.
+
+Articles about SU in peer-reviewed journals:
+Saeki, T., (1999), A guide to Seismic Un*x (SU)(2)---examples of data processing (part 1), data input and preparation of headers, Butsuri-Tansa (Geophysical Exploration), vol. 52, no. 5, 465-477.
+Stockwell, Jr. J. W. (1999), The CWP/SU: Seismic Un*x Package, Computers and Geosciences, May 1999.
+Stockwell, Jr. J. W. (1997), Free Software in Education: A case study of CWP/SU: Seismic Un*x, The Leading Edge, July 1997.
+Templeton, M. E., Gough, C.A., (1998), Web Seismic Un*x: Making seismic reflection processing more accessible, Computers and Geosciences.
+
+Acknowledgements:
+SU stands for CWP/SU:Seismic Un*x, a processing line developed at Colorado 
+School of Mines, partially based on Stanford Exploration Project (SEP) 
+software.
+
+<</COPYRIGHT>>
+<<MENU>>
+0
+<</MENU>>
+<<BUILD>>
+0
+1
+1
+<</BUILD>>
