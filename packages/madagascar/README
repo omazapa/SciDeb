@@ -1,0 +1,6 @@
+Esta carpeta contiene los scripts para la compilacion y el empaquetado de madagascar,
+asi como la informacion de dependencias y demas.
+
+NOTA: Madagascar esta siendo compilada y empaquetada sin soporte para ffmpeg ya 
+que este paquete no esta disponible en los repos oficiales.
+ 

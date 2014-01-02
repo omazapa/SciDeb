@@ -1,0 +1,5 @@
+#http://www.ahay.org/wiki/Advanced_Installation#Prerequisites
+
+scons python-numpy libx11-dev libxaw7-dev libxt-dev libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev libtiff5-dev libgd2-xpm-dev ffmpeg libplplot-dev gfortran python-cairo libcairo2-dev libjpeg8-dev 
+libblas-dev liblapack-dev swig libopenmpi-dev openmpi-bin libfftw3-dev libfftw3-mpi-dev nvidia-cuda-toolkit nvidia-cuda-dev libsuitesparse-dev
+octave liboctave-dev libnetpbm10-dev petsc-dev units python-dev python-scipy libavcodec-dev python-epydoc
