@@ -1,0 +1,6 @@
+/etc/scideb_version
+/etc/dpkg/origins/scideb
+/etc/host.conf
+/etc/issue
+/etc/issue.net
+/etc/os-release

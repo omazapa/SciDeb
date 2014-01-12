@@ -1,0 +1,7 @@
+PRETTY_NAME="SciDeb #OSNAME# Sierpinski"
+NAME="Debian #OSNAME#"
+ID=scideb
+ANSI_COLOR="1;31"
+HOME_URL="http://scideb.org"
+SUPPORT_URL="http://support.scideb.org/"
+BUG_REPORT_URL="http://bugs.scideb.org/"
