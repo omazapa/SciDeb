@@ -20,13 +20,15 @@ lb config \
 --parent-mirror-binary-security http://gfif.udea.edu.co/debian-security \
 --parent-mirror-chroot-security http://gfif.udea.edu.co/debian-security \
 --apt-source-archives false \
---hdd-label "Gnu/SciDeb" \
---iso-application "Gnu/SciDeb" \
---iso-publisher "Gnu/SciDeb Team; http://c3.itm.edu.co/scideb; scideb@c3.itm.edu.co" \
+--hdd-label "Gnu/Linux SciDeb" \
+--iso-application "Gnu/Linux SciDeb" \
+--iso-publisher "Gnu/Linux SciDeb Team; http://scideb.org/scideb; scideb@scideb.org" \
 --apt-indices false \
---debian-installer live
+--debian-installer live \
+--bootappend-live "boot=live components hostname=scideb username=scideb"
 
-
+##desktop
+echo task-kde-desktop > config/package-lists/desktop.list.chroot
 
 ##--apt-indices false reduce espacio en la imagen(sugerido)
 
