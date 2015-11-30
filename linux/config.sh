@@ -20,7 +20,7 @@ lb config \
 --parent-mirror-binary-security http://gfif.udea.edu.co/debian-security \
 --parent-mirror-chroot-security http://gfif.udea.edu.co/debian-security \
 --apt-source-archives false \
---hdd-label "Gnu/Linux SciDeb" \
+--hdd-label "Gnu/Linux_SciDeb" \
 --iso-application "Gnu/Linux SciDeb" \
 --iso-publisher "Gnu/Linux SciDeb Team; http://scideb.org/scideb; scideb@scideb.org" \
 --apt-indices false \
