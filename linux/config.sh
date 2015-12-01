@@ -28,7 +28,14 @@ lb config \
 --bootappend-live "boot=live components hostname=scideb username=scideb"
 
 ##desktop
-#echo task-kde-desktop > config/package-lists/desktop.list.chroot
+mkdir -p config/packages-lists/
+echo task-kde-desktop > config/package-lists/desktop.list.chroot
 
 ##--apt-indices false reduce espacio en la imagen(sugerido)
 
+##Password for default user scideb
+mkdir -p config/includes.chroot/lib/live/config/
+cp ../etc/passwd config/includes.chroot/lib/live/config/
+
+#Bootloaders
+cp -r ../etc/bootloaders config/.
