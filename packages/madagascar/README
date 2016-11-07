@@ -14,7 +14,8 @@ libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev libtiff5-dev libgd2-xpm-dev \
 libplplot-dev gfortran python-cairo libcairo2-dev libjpeg8-dev libblas-dev \
 liblapack-dev swig libopenmpi-dev openmpi-bin libfftw3-dev libfftw3-mpi-dev \
 nvidia-cuda-toolkit nvidia-cuda-dev libsuitesparse-dev octave liboctave-dev \
-libnetpbm10-dev petsc-dev units python-dev python-scipy libavcodec-dev python-epydoc
+libnetpbm10-dev petsc-dev units python-dev python-scipy libavcodec-dev python-epydoc libplplot-dev \
+swig libsuitesparse-dev
 
 para compilar usar el script compile.sh.
 en la carpeta de compilacion se crea un script llamado env.sh,
