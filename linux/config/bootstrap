@@ -13,51 +13,51 @@ LB_PARENT_DISTRIBUTION="sid"
 LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION="sid"
 
 # $LB_PARENT_MIRROR_BOOTSTRAP: set parent mirror to bootstrap from
-# (Default: http://gfif.udea.edu.co/debian)
-LB_PARENT_MIRROR_BOOTSTRAP="http://gfif.udea.edu.co/debian"
+# (Default: http://ftp.us.debian.org/debian)
+LB_PARENT_MIRROR_BOOTSTRAP="http://ftp.us.debian.org/debian"
 
 # $LB_PARENT_MIRROR_CHROOT: set parent mirror to fetch packages from
-# (Default: http://gfif.udea.edu.co/debian)
-LB_PARENT_MIRROR_CHROOT="http://gfif.udea.edu.co/debian"
+# (Default: http://ftp.us.debian.org/debian)
+LB_PARENT_MIRROR_CHROOT="http://ftp.us.debian.org/debian"
 
 # $LB_PARENT_MIRROR_CHROOT_SECURITY: set security parent mirror to fetch packages from
-# (Default: http://gfif.udea.edu.co/debian-security)
-LB_PARENT_MIRROR_CHROOT_SECURITY="http://gfif.udea.edu.co/debian-security"
+# (Default: http://ftp.us.debian.org/debian-security)
+LB_PARENT_MIRROR_CHROOT_SECURITY="http://ftp.us.debian.org/debian-security"
 
 # $LB_PARENT_MIRROR_BINARY: set parent mirror which ends up in the image
-# (Default: http://gfif.udea.edu.co/debian)
-LB_PARENT_MIRROR_BINARY="http://gfif.udea.edu.co/debian"
+# (Default: http://ftp.us.debian.org/debian)
+LB_PARENT_MIRROR_BINARY="http://ftp.us.debian.org/debian"
 
 # $LB_PARENT_MIRROR_BINARY_SECURITY: set security parent mirror which ends up in the image
-# (Default: http://gfif.udea.edu.co/debian-security)
-LB_PARENT_MIRROR_BINARY_SECURITY="http://gfif.udea.edu.co/debian-security"
+# (Default: http://ftp.us.debian.org/debian-security)
+LB_PARENT_MIRROR_BINARY_SECURITY="http://ftp.us.debian.org/debian-security"
 
 # $LB_PARENT_MIRROR_DEBIAN_INSTALLER: set debian-installer parent mirror
-# (Default: http://gfif.udea.edu.co/debian)
+# (Default: http://ftp.us.debian.org/debian)
 LB_PARENT_MIRROR_DEBIAN_INSTALLER="http://ftp.us.debian.org/debian"
 
 # $LB_MIRROR_BOOTSTRAP: set mirror to bootstrap from
-# (Default: http://gfif.udea.edu.co/debian)
-LB_MIRROR_BOOTSTRAP="http://gfif.udea.edu.co/debian"
+# (Default: http://ftp.us.debian.org/debian)
+LB_MIRROR_BOOTSTRAP="http://ftp.us.debian.org/debian"
 
 # $LB_MIRROR_CHROOT: set mirror to fetch packages from
-# (Default: http://gfif.udea.edu.co/debian)
-LB_MIRROR_CHROOT="http://gfif.udea.edu.co/debian"
+# (Default: http://ftp.us.debian.org/debian)
+LB_MIRROR_CHROOT="http://ftp.us.debian.org/debian"
 
 # $LB_MIRROR_CHROOT_SECURITY: set security mirror to fetch packages from
-# (Default: http://gfif.udea.edu.co/debian-security)
-LB_MIRROR_CHROOT_SECURITY="http://gfif.udea.edu.co/debian-security"
+# (Default: http://ftp.us.debian.org/debian-security)
+LB_MIRROR_CHROOT_SECURITY="http://ftp.us.debian.org/debian-security"
 
 # $LB_MIRROR_BINARY: set mirror which ends up in the image
-# (Default: http://gfif.udea.edu.co/debian)
-LB_MIRROR_BINARY="http://gfif.udea.edu.co/debian"
+# (Default: http://ftp.us.debian.org/debian)
+LB_MIRROR_BINARY="http://ftp.us.debian.org/debian"
 
 # $LB_MIRROR_BINARY_SECURITY: set security mirror which ends up in the image
-# (Default: http://gfif.udea.edu.co/debian-security)
-LB_MIRROR_BINARY_SECURITY="http://gfif.udea.edu.co/debian-security"
+# (Default: http://ftp.us.debian.org/debian-security)
+LB_MIRROR_BINARY_SECURITY="http://ftp.us.debian.org/debian-security"
 
 # $LB_MIRROR_DEBIAN_INSTALLER: set debian-installer mirror
-# (Default: http://gfif.udea.edu.co/debian)
+# (Default: http://ftp.us.debian.org/debian)
 LB_MIRROR_DEBIAN_INSTALLER="http://ftp.us.debian.org/debian"
 
 # $LB_BOOTSTRAP_QEMU_ARCHITECTURES: architectures to use foreign bootstrap
