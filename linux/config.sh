@@ -26,7 +26,8 @@ lb config \
 --apt-indices false \
 --debian-installer true \
 --system live \
---mode debian
+--mode debian \
+--bootappend-live "boot=live components username=scideb"
 
 
 
