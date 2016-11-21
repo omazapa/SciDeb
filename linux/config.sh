@@ -1,7 +1,7 @@
 lb config \
 --architectures amd64 \
---parent-distribution sid \
---distribution sid \
+--parent-distribution jessie \
+--distribution jessie \
 --updates false \
 --security false \
 --archive-areas "main contrib non-free" \
@@ -12,8 +12,8 @@ lb config \
 --mirror-chroot-security http://ftp.us.debian.org/debian-security \
 --parent-mirror-debian-installer http://ftp.us.debian.org/debian \
 --mirror-debian-installer http://ftp.us.debian.org/debian \
---parent-debian-installer-distribution sid \
---debian-installer-distribution sid \
+--parent-debian-installer-distribution jessie \
+--debian-installer-distribution jessie \
 --parent-mirror-bootstrap http://ftp.us.debian.org/debian \
 --parent-mirror-binary http://ftp.us.debian.org/debian \
 --parent-mirror-chroot http://ftp.us.debian.org/debian \
