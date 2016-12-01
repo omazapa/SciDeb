@@ -30,6 +30,6 @@ lb config \
 --bootappend-live "boot=live components username=scideb"
 
 
-
+echo "task-kde-desktop task-laptop" >> config/package-lists/kde.list.chroot
 ##--apt-indices false reduce espacio en la imagen(sugerido)
 
