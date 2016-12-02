@@ -1,0 +1,9 @@
+git clone https://anonscm.debian.org/cgit/debian-live/live-boot	
+git clone https://anonscm.debian.org/cgit/debian-live/live-build	
+git clone https://anonscm.debian.org/cgit/debian-live/live-config	
+git clone https://anonscm.debian.org/cgit/debian-live/live-images	
+git clone https://anonscm.debian.org/cgit/debian-live/live-manual	
+git clone https://anonscm.debian.org/cgit/debian-live/live-support	
+git clone https://anonscm.debian.org/cgit/debian-live/live-tasks	
+git clone https://anonscm.debian.org/cgit/debian-live/live-tools	
+git clone https://anonscm.debian.org/cgit/debian-live/live-wrapper
