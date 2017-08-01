@@ -1,3 +1,9 @@
+base-files (8.0) unstable; urgency=medium
+
+  * Adapted for SciDeb
+
+ -- Omar Zapata <scideb@scideb.org>  Sun, 30 Jul 2017 18:19:00 +0200
+
 base-files (7.2) unstable; urgency=medium
 
   * Changed issue, issue.net, debian_version and os-release to read "jessie/sid",

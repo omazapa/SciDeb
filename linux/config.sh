@@ -32,9 +32,11 @@ lb config \
 
 ##desktop
 mkdir -p config/packages-lists/
-echo task-kde-desktop > config/package-lists/desktop.list.chroot
+echo task-xfce-desktop > config/package-lists/desktop.list.chroot
 
-echo "task-kde-desktop task-laptop" >> config/package-lists/kde.list.chroot
+echo root-system > config/package-lists/root.list.chroot
+
+echo "task-xfce-desktop task-laptop kdm" >> config/package-lists/xfce.list.chroot
 ##--apt-indices false reduce espacio en la imagen(sugerido)
 
 ##Password for default user scideb
